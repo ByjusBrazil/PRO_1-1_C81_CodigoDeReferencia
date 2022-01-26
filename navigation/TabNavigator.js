@@ -16,7 +16,7 @@ const BottomTabNavigator = () => {
                         iconName = focused
                             ? 'book'
                             : 'book-outline';
-                    } else if (route.name === 'CreateStory') {
+                    } else if (route.name === 'Criar História') {
                         iconName = focused ? 'create' : 'create-outline';
                     }
                     return <Ionicons name={iconName} size={size} color={color} />;
@@ -28,7 +28,7 @@ const BottomTabNavigator = () => {
             }}
         >
             <Tab.Screen name="Feed" component={Feed} />
-            <Tab.Screen name="CreateStory" component={CreateStory} />
+            <Tab.Screen name="Criar História" component={CreateStory} />
         </Tab.Navigator>
     );
 }
